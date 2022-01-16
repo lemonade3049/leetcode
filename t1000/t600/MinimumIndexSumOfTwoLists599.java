@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.PriorityQueue;
 
 public class MinimumIndexSumOfTwoLists599 {
-    class P {
+    static class P {
         String val;
         int index;
 
@@ -32,13 +32,12 @@ public class MinimumIndexSumOfTwoLists599 {
             }
         }
 
-
-        int index = p.peek().index;
+        int index =  p.peek().index;
         StringBuilder sb = new StringBuilder();
 
         while (!p.isEmpty() && p.peek().index == index) {
             P t = p.poll();
-            sb.append(t.val + "#");
+            sb.append(t.val).append("#");
         }
         String str = sb.toString();
         str = str.substring(0, str.length() - 1);
