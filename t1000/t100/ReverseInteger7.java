@@ -1,8 +1,5 @@
 package com.lemonade.leetcode.t1000.t100;
-
-import java.util.Arrays;
-import java.util.SplittableRandom;
-
+@SuppressWarnings("unused")
 public class ReverseInteger7 {
 
     public static void main(String[] args) {
@@ -12,10 +9,7 @@ public class ReverseInteger7 {
     public int reverse(int x) {
         String str = String.valueOf(x);
         char[] arr = str.toCharArray();
-        boolean negFlag = false;
-        if (arr[0] == '-') {
-            negFlag = true;
-        }
+        boolean negFlag = arr[0] == '-';
         int i = negFlag ? 1 : 0;
         int j = arr.length - 1;
         while(i < j){
@@ -31,7 +25,7 @@ public class ReverseInteger7 {
         if(!negFlag && res.length() == 10 && res.compareTo(String.valueOf(Integer.MAX_VALUE)) > 0){
             return 0;
         }
-        return Integer.valueOf(res);
+        return Integer.parseInt(res);
 
     }
 

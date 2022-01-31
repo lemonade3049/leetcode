@@ -1,5 +1,5 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class PalindromeNumber9 {
     public static void main(String[] args) {
 

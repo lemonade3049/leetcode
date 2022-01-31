@@ -1,7 +1,5 @@
 package com.lemonade.leetcode.t1000.t100;
-
-import javax.swing.tree.TreeNode;
-
+@SuppressWarnings("unused")
 public class SameTree100 {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
@@ -17,7 +15,7 @@ public class SameTree100 {
 
 
 
-    public class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

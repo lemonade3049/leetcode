@@ -1,5 +1,5 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class RemoveDuplicatesFromSortedList83 {
 
     public static void main(String[] args) {
@@ -12,20 +12,17 @@ public class RemoveDuplicatesFromSortedList83 {
             ListNode p = head;
             ListNode n = head.next;
             while (n != null) {
-                if (n.val == p.val) {
-                    n = n.next;
-                } else {
-                    p.next = n;
+                if (n.val != p.val) {
                     p = n;
-                    n = n.next;
                 }
+                n = n.next;
             }
-            p.next = n;
+            p.next = null;
         }
         return head;
     }
 
-    class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 

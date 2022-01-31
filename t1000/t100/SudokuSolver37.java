@@ -1,10 +1,10 @@
 package com.lemonade.leetcode.t1000.t100;
 
 import java.util.HashMap;
-
+@SuppressWarnings("unused")
 public class SudokuSolver37 {
     public boolean isValidSudoku(char[][] board) {
-        HashMap<Integer, int[]> rowMap = new HashMap();
+        HashMap<Integer, int[]> rowMap = new HashMap<>();
         HashMap<Integer, int[]> colMap = new HashMap<>();
         HashMap<Integer, int[]> recMap = new HashMap<>();
         for (int i = 0; i < 9; i++) {

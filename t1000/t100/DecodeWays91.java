@@ -1,9 +1,7 @@
 package com.lemonade.leetcode.t1000.t100;
 
+@SuppressWarnings("unused")
 public class DecodeWays91 {
-    public static void main(String[] args) {
-        new DecodeWays91().numDecodings("11106");
-    }
 
     public int numDecodings(String s) {
 

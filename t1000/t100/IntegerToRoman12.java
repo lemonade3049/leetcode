@@ -1,10 +1,7 @@
 package com.lemonade.leetcode.t1000.t100;
 
+@SuppressWarnings("unused")
 public class IntegerToRoman12 {
-
-    public static void main(String[] args) {
-        new IntegerToRoman12().intToRoman(1994);
-    }
 
     public String intToRoman(int num) {
         int[] arr = new int[]{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1, 1};
@@ -12,9 +9,7 @@ public class IntegerToRoman12 {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < arr.length; i += 2) {
             int n = num / arr[i];
-            for (int j = 0; j < n; j++) {
-                sb.append(sArr[i]);
-            }
+            sb.append(sArr[i].repeat(Math.max(0, n)));
             num -= n * arr[i];
             n = num / arr[i + 1];
             if (n == 1) {

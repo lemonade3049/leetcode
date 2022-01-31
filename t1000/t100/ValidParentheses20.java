@@ -1,7 +1,7 @@
 package com.lemonade.leetcode.t1000.t100;
 
 import java.util.Stack;
-
+@SuppressWarnings("unused")
 public class ValidParentheses20 {
 
     public boolean isValid(String s) {

@@ -18,7 +18,7 @@ public class PowXN50 {
             len++;
         }
 
-        double arr[] = new double[len + 1];
+        double[] arr = new double[len + 1];
         arr[0] = 1;
         arr[1] = x;
         for (int i = 2; i < arr.length; i++) {

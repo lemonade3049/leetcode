@@ -3,10 +3,10 @@ package com.lemonade.leetcode.t1000.t100;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+@SuppressWarnings("unused")
 public class ThreeSum15 {
     public static void main(String[] args) {
-        new ThreeSum15().threeSum(new int[]{-1, 0, 1, 2, -1, -4});
+
     }
 
     public List<List<Integer>> threeSum(int[] nums) {

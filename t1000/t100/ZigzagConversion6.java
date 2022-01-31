@@ -18,7 +18,7 @@ public class ZigzagConversion6 {
             for (int i = j; i < s.length(); i = i + 2 * (numRows - 1)) {
                 res.append(s.charAt(i));
                 if (j != 0 && j != numRows- 1 && i + 2 * (numRows - 1 - j) < s.length()) {
-                    res.append(s.charAt(i + 2 * (numRows - 1 - 1 * j)));
+                    res.append(s.charAt(i + 2 * (numRows - 1 - j)));
                 }
             }
         }

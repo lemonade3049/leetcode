@@ -1,12 +1,10 @@
 package com.lemonade.leetcode.t1000.t100;
 
-import com.sun.source.tree.Tree;
-
 import java.util.ArrayList;
 import java.util.List;
-
+@SuppressWarnings("unused")
 public class ValidateBinarySearchTree98 {
-    class TreeNode {
+    static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

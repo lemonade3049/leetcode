@@ -1,8 +1,8 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class StringToIntegerAtoi8 {
     public static void main(String[] args) {
-        new StringToIntegerAtoi8().myAtoi("-1 1a");
+
     }
 
     public int myAtoi(String s) {
@@ -10,17 +10,17 @@ public class StringToIntegerAtoi8 {
         boolean startFlg = false;
         boolean negFlg = false;
         long res = 0;
-        for (int i = 0; i < arr.length; i++) {
+        for (char c : arr) {
             if (!startFlg) {
-                if (' ' == arr[i]) {
+                if (' ' == c) {
                     continue;
                 }
-                if ('-' == arr[i] || '+' == arr[i] || (arr[i] >= 0 && arr[i] <= '9')) {
+                if ('-' == c || '+' == c || (c >= '0' && c <= '9')) {
                     startFlg = true;
-                    if ('-' == arr[i]) {
+                    if ('-' == c) {
                         negFlg = true;
                         continue;
-                    } else if ('+' == arr[i]) {
+                    } else if ('+' == c) {
                         continue;
                     }
                 } else {
@@ -28,17 +28,15 @@ public class StringToIntegerAtoi8 {
                 }
             }
 
-            if (startFlg) {
-                if (arr[i] >= '0' && arr[i] <= '9') {
-                    res = res * 10 + (arr[i] - '0');
-                    if (!negFlg && res >= Integer.MAX_VALUE) {
-                        return Integer.MAX_VALUE;
-                    } else if (negFlg && res >= ((long) Integer.MAX_VALUE) + 1) {
-                        return Integer.MIN_VALUE;
-                    }
-                } else {
-                    return (int) (negFlg ? -res : res);
+            if (c >= '0' && c <= '9') {
+                res = res * 10 + (c - '0');
+                if (!negFlg && res >= Integer.MAX_VALUE) {
+                    return Integer.MAX_VALUE;
+                } else if (negFlg && res >= ((long) Integer.MAX_VALUE) + 1) {
+                    return Integer.MIN_VALUE;
                 }
+            } else {
+                return (int) (negFlg ? -res : res);
             }
         }
         return (int) (negFlg ? -res : res);

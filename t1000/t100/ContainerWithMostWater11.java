@@ -1,5 +1,6 @@
 package com.lemonade.leetcode.t1000.t100;
 
+@SuppressWarnings("unused")
 public class ContainerWithMostWater11 {
     public int maxArea(int[] height) {
         int l = 0;

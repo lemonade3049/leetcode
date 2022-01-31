@@ -1,6 +1,7 @@
 package com.lemonade.leetcode.t1000.t100;
 
-public class LengthofLastWord58 {
+@SuppressWarnings("unused")
+public class LengthOfLastWord58 {
     public int lengthOfLastWord(String s) {
         int i = s.length() - 1;
         while (i >= 0 && s.charAt(i) == ' ') {

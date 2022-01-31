@@ -1,9 +1,7 @@
 package com.lemonade.leetcode.t1000.t100;
 
+@SuppressWarnings("unused")
 public class CountAndSay38 {
-    public static void main(String[] args) {
-        new CountAndSay38().countAndSay(4);
-    }
 
     public String countAndSay(int n) {
         String res = "1";

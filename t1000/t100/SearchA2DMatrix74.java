@@ -1,5 +1,5 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class SearchA2DMatrix74 {
     public boolean searchMatrix(int[][] matrix, int target) {
         int row = matrix.length;

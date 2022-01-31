@@ -1,6 +1,6 @@
 package com.lemonade.leetcode.t1000.t100;
-
-public class RemoveDuplicatesfromSortedArray26 {
+@SuppressWarnings("unused")
+public class RemoveDuplicatesFromSortedArray26 {
     public static void main(String[] args) {
 
     }

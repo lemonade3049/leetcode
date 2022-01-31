@@ -1,5 +1,5 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class MergeSortedArray88 {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int p2 = nums2.length - 1;

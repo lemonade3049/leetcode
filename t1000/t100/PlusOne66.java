@@ -1,9 +1,8 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class PlusOne66 {
 
     public static void main(String[] args) {
-        System.out.println(plusOne(new int[]{1,2,3}));
     }
     public static int[] plusOne(int[] digits) {
         int end = -1;

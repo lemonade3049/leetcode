@@ -1,7 +1,7 @@
 package com.lemonade.leetcode.t1000.t100;
 
 import java.util.Arrays;
-
+@SuppressWarnings("unused")
 public class ThreeSumClosest16 {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);

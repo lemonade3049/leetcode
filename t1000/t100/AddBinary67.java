@@ -12,7 +12,7 @@ public class AddBinary67 {
         int lenA = aArr.length;
         int lenB = bArr.length;
 
-        int res[] = new int[Math.max(lenA, lenB) + 1];
+        int[] res = new int[Math.max(lenA, lenB) + 1];
 
 
         int i = lenA - 1;

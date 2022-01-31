@@ -1,11 +1,8 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class Sqrt69 {
     public static void main(String[] args) {
-        // 2147483647
-        //2,147,483,647
-        // System.out.println(Integer.MAX_VALUE);
-        System.out.println(46340 * 46340);
+
     }
 
     public static int mySqrt(int x) {

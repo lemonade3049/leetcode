@@ -1,10 +1,8 @@
 package com.lemonade.leetcode.t1000.t100;
 
+@SuppressWarnings("unused")
 public class JumpGame2_45 {
 
-    public static void main(String[] args) {
-        new JumpGame2_45().jump(new int[]{2, 3, 1, 1, 4});
-    }
 
     public int jump(int[] nums) {
         int[] dp = new int[nums.length];

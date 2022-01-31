@@ -1,14 +1,6 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class MinimumPathSum64 {
-
-    public static void main(String[] args) {
-        int[][] arr = new int[3][2];
-        arr[0] = new int[]{1, 3};
-        arr[1] = new int[]{1, 5};
-        arr[2] = new int[]{1, 5};
-        new MinimumPathSum64().minPathSum(arr);
-    }
 
     public int minPathSum(int[][] grid) {
         int row = grid.length;

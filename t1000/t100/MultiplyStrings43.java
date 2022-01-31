@@ -1,10 +1,9 @@
 package com.lemonade.leetcode.t1000.t100;
-
+@SuppressWarnings("unused")
 public class MultiplyStrings43 {
 
 
     public static void main(String[] args) {
-        new MultiplyStrings43().multiply("999", "999");
     }
 
     public String multiply(String num1, String num2) {

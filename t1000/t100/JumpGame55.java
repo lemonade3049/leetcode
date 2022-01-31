@@ -1,5 +1,6 @@
 package com.lemonade.leetcode.t1000.t100;
 
+@SuppressWarnings("unused")
 public class JumpGame55 {
 
     public boolean canJump(int[] nums) {
@@ -17,9 +18,6 @@ public class JumpGame55 {
             i--;
         }
 
-        if (nums[0] > n) {
-            return true;
-        }
-        return false;
+        return nums[0] > n;
     }
 }

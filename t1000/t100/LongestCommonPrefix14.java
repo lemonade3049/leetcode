@@ -1,6 +1,6 @@
 package com.lemonade.leetcode.t1000.t100;
 
-
+@SuppressWarnings("unused")
 public class LongestCommonPrefix14 {
     public static String longestCommonPrefix(String[] strs) {
         String res = strs[0];
@@ -21,8 +21,4 @@ public class LongestCommonPrefix14 {
         return s1.length() > s2.length() ? s2 : s1;
     }
 
-    public static void main(String[] args) {
-//        System.out.println(longestCommonPrefix(new String[]{"f1", "s"}));
-        System.out.println("".substring(1, 10));
-    }
 }
