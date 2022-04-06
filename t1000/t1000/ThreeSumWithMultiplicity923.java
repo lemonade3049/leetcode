@@ -24,12 +24,12 @@ public class ThreeSumWithMultiplicity923 {
                     continue;
                 }
                 if (i == j && i == k) {
-                    res += temp[i] * (temp[i] - 1l) * (temp[i] - 2l) / 3l / 2l;
+                    res += temp[i] * (temp[i] - 1L) * (temp[i] - 2L) / 3L / 2L;
                 } else if (i == j || j == k) {
                     if (i == j) {
-                        res += temp[k] * temp[i] * (temp[i] - 1l) / 2l;
+                        res += temp[k] * temp[i] * (temp[i] - 1L) / 2L;
                     } else {
-                        res += temp[i] * temp[j] * (temp[j] - 1l) / 2l;
+                        res += temp[i] * temp[j] * (temp[j] - 1L) / 2L;
                     }
                 } else {
                     res += temp[i] * temp[j] * temp[k];
