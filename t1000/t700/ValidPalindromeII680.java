@@ -1,17 +1,7 @@
-package com.lemonade.leetcode.t1000.t600;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+package com.lemonade.leetcode.t1000.t700;
 
 @SuppressWarnings("unused")
 public class ValidPalindromeII680 {
-
-    @Test
-    public void t() {
-        Assertions.assertTrue(validPalindrome("aba"));
-        Assertions.assertTrue(validPalindrome("abca"));
-        Assertions.assertFalse(validPalindrome("abc"));
-    }
 
     public boolean validPalindrome(String s) {
         char[] chars = s.toCharArray();

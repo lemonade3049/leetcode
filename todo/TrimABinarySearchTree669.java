@@ -1,4 +1,4 @@
-package com.lemonade.leetcode.t1000.t700;
+package com.lemonade.leetcode.todo;
 
 
 import com.lemonade.leetcode.common.TreeNode;
