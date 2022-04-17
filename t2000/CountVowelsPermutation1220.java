@@ -4,7 +4,7 @@ public class CountVowelsPermutation1220 {
 
 
     public static void main(String[] args) {
-        new CountVowelsPermutation1220().countVowelPermutation(45);
+        System.out.println(new CountVowelsPermutation1220().countVowelPermutation(45));
     }
 
     public int countVowelPermutation(int n) {

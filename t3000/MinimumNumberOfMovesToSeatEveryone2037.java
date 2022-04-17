@@ -2,6 +2,7 @@ package com.lemonade.leetcode.t3000;
 
 import java.util.Arrays;
 
+@SuppressWarnings("unused")
 public class MinimumNumberOfMovesToSeatEveryone2037 {
     public int minMovesToSeat(int[] seats, int[] students) {
         Arrays.sort(seats);

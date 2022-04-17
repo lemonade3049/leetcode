@@ -1,5 +1,6 @@
 package com.lemonade.leetcode.t2000;
 
+@SuppressWarnings("unused")
 public class CalculateMoneyInLeetcodeBank1716 {
 
     public int totalMoney(int n) {

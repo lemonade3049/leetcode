@@ -11,8 +11,8 @@ public class MaximumRunningTimeOfNComputers2141 {
     public long maxRunTime(int n, int[] batteries) {
 
         List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < batteries.length; i++) {
-            list.add(batteries[i]);
+        for (int battery : batteries) {
+            list.add(battery);
         }
         return f(n, list);
     }
@@ -20,8 +20,8 @@ public class MaximumRunningTimeOfNComputers2141 {
     long f(int n, List<Integer> batteries) {
         long sum = 0;
 
-        for (int i = 0; i < batteries.size(); i++) {
-            sum += batteries.get(i);
+        for (Integer battery : batteries) {
+            sum += battery;
         }
         while (true) {
             long even = sum / n;

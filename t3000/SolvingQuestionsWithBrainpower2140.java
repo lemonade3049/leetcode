@@ -15,11 +15,11 @@ public class SolvingQuestionsWithBrainpower2140 {
 
         long l;
         l = new SolvingQuestionsWithBrainpower2140().mostPoints(in);
-
+        System.out.println(l);
     }
 
     public long mostPoints(int[][] questions) {
-        long dp[] = new long[questions.length];
+        long[] dp = new long[questions.length];
         for (int i = dp.length - 1; i >= 0; i--) {
             dp[i] = questions[i][0];
             if (i + questions[i][1] + 1 < dp.length) {

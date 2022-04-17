@@ -2,6 +2,7 @@ package com.lemonade.leetcode.t2000;
 
 import java.util.Arrays;
 
+@SuppressWarnings("unused")
 public class CanMakeArithmeticProgressionFromSequence1502 {
 
     public boolean canMakeArithmeticProgression(int[] arr) {

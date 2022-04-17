@@ -2,7 +2,7 @@ package com.lemonade.leetcode.t3000;
 
 public class MinimumMovesToReachTargetScore2139 {
     public static void main(String[] args) {
-        new MinimumMovesToReachTargetScore2139().minMoves(19, 2);
+        System.out.println(new MinimumMovesToReachTargetScore2139().minMoves(19, 2));
     }
 
     public int minMoves(int target, int maxDoubles) {

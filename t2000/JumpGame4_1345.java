@@ -2,6 +2,7 @@ package com.lemonade.leetcode.t2000;
 
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class JumpGame4_1345 {
 
     public static void main(String[] args) {
@@ -46,11 +47,9 @@ public class JumpGame4_1345 {
                 }
                 map.remove(arr[curr]);
             }
-            if (curr > 0) {
-                if (dp[curr - 1] == -1 || dp[curr - 1] > i) {
-                    dp[curr - 1] = i;
-                    q.offer(curr - 1);
-                }
+            if (dp[curr - 1] == -1 || dp[curr - 1] > i) {
+                dp[curr - 1] = i;
+                q.offer(curr - 1);
             }
             if (curr < arr.length - 1) {
                 if (dp[curr + 1] == -1 || dp[curr + 1] > i) {

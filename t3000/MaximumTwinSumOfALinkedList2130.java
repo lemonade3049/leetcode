@@ -2,8 +2,9 @@ package com.lemonade.leetcode.t3000;
 
 import java.util.Stack;
 
+@SuppressWarnings("unused")
 public class MaximumTwinSumOfALinkedList2130 {
-    class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 
@@ -22,7 +23,7 @@ public class MaximumTwinSumOfALinkedList2130 {
 
     public int pairSum(ListNode head) {
         ListNode n = head;
-        Stack<ListNode> stack = new Stack();
+        Stack<ListNode> stack = new Stack<>();
         int sum = 0;
 
         while (n != null) {

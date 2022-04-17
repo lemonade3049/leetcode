@@ -1,13 +1,12 @@
 package com.lemonade.leetcode.t2000;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class CircularPermutationInBinaryRepresentation1238 {
 
     public static void main(String[] args) {
-        circularPermutation(7, 2);
+        System.out.println(circularPermutation(7, 2));
     }
 
     static int start;

@@ -1,20 +1,18 @@
 package com.lemonade.leetcode.t2000;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.PriorityQueue;
 
 public class CarPooling1094 {
 
     public static void main(String[] args) {
-        carPooling(new int[1][1], 1);
+        System.out.println(carPooling(new int[1][1], 1));
     }
 
     public static boolean carPooling(int[][] trips, int capacity) {
         PriorityQueue<Point> p = new PriorityQueue<>();
-        for(int i = 0; i < trips.length; i++){
-            p.offer(new Point(trips[i][1], trips[i][0], 1));
-            p.offer(new Point(trips[i][2], trips[i][0], 0));
+        for (int[] trip : trips) {
+            p.offer(new Point(trip[1], trip[0], 1));
+            p.offer(new Point(trip[2], trip[0], 0));
         }
         int highest = 0;
         while (!p.isEmpty()){

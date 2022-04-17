@@ -1,7 +1,6 @@
 package com.lemonade.leetcode.t2000;
 
-import javax.imageio.plugins.tiff.FaxTIFFTagSet;
-
+@SuppressWarnings("unused")
 public class JumpGame3_1306 {
     public boolean canReach(int[] arr, int start) {
         int[] dp = new int[arr.length];

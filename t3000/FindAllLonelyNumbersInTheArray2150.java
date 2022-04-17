@@ -1,17 +1,16 @@
 package com.lemonade.leetcode.t3000;
 
-import com.sun.source.tree.Tree;
-
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class FindAllLonelyNumbersInTheArray2150 {
 
     public List<Integer> findLonely(int[] nums) {
         List<Integer> list = new LinkedList<>();
         int[] arr = new int[1000001];
 
-        for (int i = 0; i < nums.length; i++) {
-            arr[nums[i]]++;
+        for (int num : nums) {
+            arr[num]++;
         }
 
         for (int i = 0; i < arr.length; i++) {
@@ -38,11 +37,11 @@ public class FindAllLonelyNumbersInTheArray2150 {
     public List<Integer> findLonely2(int[] nums) {
         List<Integer> list = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            if (map.containsKey(nums[i])) {
-                map.put(nums[i], map.get(nums[i]) + 1);
+        for (int num : nums) {
+            if (map.containsKey(num)) {
+                map.put(num, map.get(num) + 1);
             } else {
-                map.put(nums[i], 1);
+                map.put(num, 1);
             }
         }
         for(Map.Entry<Integer, Integer> i :  map.entrySet()){

@@ -6,10 +6,10 @@ import java.util.List;
 public class FindGoodDaysToRobTheBank2100 {
 
     public static void main(String[] args) {
-        new FindGoodDaysToRobTheBank2100().goodDaysToRobBank(new int[]{5,3,3,3,5,6,2}, 2);
+        System.out.println(new FindGoodDaysToRobTheBank2100().goodDaysToRobBank(new int[]{5, 3, 3, 3, 5, 6, 2}, 2));
     }
     public List<Integer> goodDaysToRobBank(int[] security, int time) {
-        List list = new LinkedList();
+        List<Integer> list = new LinkedList<>();
         int[] ac = new int[security.length];
         ac[0] = 0;
         for (int i = 1; i < security.length; i++) {

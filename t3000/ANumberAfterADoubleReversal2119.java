@@ -6,9 +6,6 @@ public class ANumberAfterADoubleReversal2119 {
         if (num == 0) {
             return true;
         }
-        if (num % 10 == 0) {
-            return false;
-        }
-        return true;
+        return num % 10 != 0;
     }
 }

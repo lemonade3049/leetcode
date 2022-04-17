@@ -1,14 +1,16 @@
 package com.lemonade.leetcode.t2000;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
+@SuppressWarnings("unused")
 public class DistantBarcodes1054 {
 
     public static void main(String[] args) {
-        new DistantBarcodes1054().rearrangeBarcodes(new int[]{1});
+        System.out.println(Arrays.toString(new DistantBarcodes1054().rearrangeBarcodes(new int[]{1})));
     }
 
-    class P implements Comparable<P> {
+    static class P implements Comparable<P> {
         int key;
         int value;
 
@@ -26,11 +28,11 @@ public class DistantBarcodes1054 {
 
     public int[] rearrangeBarcodes(int[] barcodes) {
 
-        PriorityQueue<P> p = new PriorityQueue();
+        PriorityQueue<P> p = new PriorityQueue<>();
 
-        int a[] = new int[10001];
-        for (int i = 0; i < barcodes.length; i++) {
-            a[barcodes[i]]++;
+        int[] a = new int[10001];
+        for (int barcode : barcodes) {
+            a[barcode]++;
         }
 
         for (int i = 0; i < a.length; i++) {

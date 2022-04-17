@@ -2,7 +2,7 @@ package com.lemonade.leetcode.t3000;
 
 public class DivideAStringIntoGroupsOfSizeK2138 {
     public static void main(String[] args) {
-        new DivideAStringIntoGroupsOfSizeK2138().divideString("abcdefghij", 3, 'X');
+        System.out.println(new DivideAStringIntoGroupsOfSizeK2138().divideString("abcdefghij", 3, 'X'));
     }
 
     public String[] divideString(String s, int k, char fill) {

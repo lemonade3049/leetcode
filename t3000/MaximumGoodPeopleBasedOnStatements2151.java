@@ -9,7 +9,7 @@ public class MaximumGoodPeopleBasedOnStatements2151 {
         map[1] = new int[]{1, 2, 2};
         map[2] = new int[]{2, 0, 2};
 
-        new MaximumGoodPeopleBasedOnStatements2151().maximumGood(map);
+        System.out.println(new MaximumGoodPeopleBasedOnStatements2151().maximumGood(map));
 
         System.out.println(1);
     }
@@ -18,8 +18,8 @@ public class MaximumGoodPeopleBasedOnStatements2151 {
         int n = statements.length;
         int res = n;
 
-        int sayBad[] = new int[n];
-        int saidBad[] = new int[n];
+        int[] sayBad = new int[n];
+        int[] saidBad = new int[n];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {

@@ -17,16 +17,12 @@ public class GreatestCommonDivisorOfStrings1071 {
             return "";
         }
         int t = getHighestCommonFactor(str1.length() / sub1.length(), str2.length() / sub2.length());
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < t; i++) {
-            sb.append(sub1);
-        }
-        return sb.toString();
+        return sub1.repeat(Math.max(0, t));
     }
 
     static int getHighestCommonFactor(int i, int j) {
-        int b = i > j ? i : j;
-        int s = i > j ? j : i;
+        int b = Math.max(i, j);
+        int s = Math.min(i, j);
 
         while (true) {
             b = b % s;

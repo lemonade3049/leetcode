@@ -2,7 +2,6 @@ package com.lemonade.leetcode.t1000.t200;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class MajorityElement169 {
     public static void main(String[] args) {
@@ -12,8 +11,7 @@ public class MajorityElement169 {
 
     public static int majorityElement(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int key = nums[i];
+        for (int key : nums) {
             if (map.containsKey(key)) {
                 map.put(key, map.get(key) + 1);
             } else {
