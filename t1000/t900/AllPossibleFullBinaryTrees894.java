@@ -1,27 +1,13 @@
 package com.lemonade.leetcode.t1000.t900;
 
+import com.lemonade.leetcode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("unused")
 public class AllPossibleFullBinaryTrees894 {
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public List<TreeNode> allPossibleFBT(int n) {
         List<TreeNode> list = new ArrayList<>();

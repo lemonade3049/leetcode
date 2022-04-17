@@ -1,29 +1,15 @@
 package com.lemonade.leetcode.t2000;
 
+import com.lemonade.leetcode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+@SuppressWarnings("unused")
 public class AllElementsInTwoBinarySearchTrees1305 {
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
 
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         List<Integer> list = new ArrayList<>();

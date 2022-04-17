@@ -1,4 +1,7 @@
 package com.lemonade.leetcode.t1000.t100;
+
+import com.lemonade.leetcode.common.TreeNode;
+
 @SuppressWarnings("unused")
 public class SameTree100 {
     public boolean isSameTree(TreeNode p, TreeNode q) {
@@ -11,26 +14,5 @@ public class SameTree100 {
         }
 
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-    }
-
-
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

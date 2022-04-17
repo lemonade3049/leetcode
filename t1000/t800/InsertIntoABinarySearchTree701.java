@@ -1,27 +1,9 @@
 package com.lemonade.leetcode.t1000.t800;
 
-import com.sun.source.tree.Tree;
+import com.lemonade.leetcode.common.TreeNode;
 
+@SuppressWarnings("unused")
 public class InsertIntoABinarySearchTree701 {
-
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if (root == null) {

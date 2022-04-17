@@ -1,28 +1,11 @@
 package com.lemonade.leetcode.t2000;
 
-import com.sun.source.tree.Tree;
+import com.lemonade.leetcode.common.TreeNode;
 
 import java.util.Stack;
 
+@SuppressWarnings("unused")
 public class BinarySearchTreeToGreaterSumTree1038 {
-    public class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public TreeNode bstToGst(TreeNode root) {
         int num = 0;

@@ -1,5 +1,8 @@
 package com.lemonade.leetcode.t2000;
 
+import com.lemonade.leetcode.common.TreeNode;
+
+@SuppressWarnings("unused")
 public class DeleteLeavesWithAGivenValue1325 {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
         if (f(root, target)) {
@@ -19,28 +22,7 @@ public class DeleteLeavesWithAGivenValue1325 {
             n.right = null;
         }
 
-        if (n.left == null && n.right == null && n.val == target) {
-            return true;
-        }
-        return false;
+        return n.left == null && n.right == null && n.val == target;
     }
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 }

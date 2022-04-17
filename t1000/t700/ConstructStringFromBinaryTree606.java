@@ -1,5 +1,8 @@
 package com.lemonade.leetcode.t1000.t700;
 
+import com.lemonade.leetcode.common.TreeNode;
+
+@SuppressWarnings("unused")
 public class ConstructStringFromBinaryTree606 {
     public String tree2str(TreeNode root) {
         StringBuilder sb = new StringBuilder();
@@ -19,7 +22,7 @@ public class ConstructStringFromBinaryTree606 {
             }
             return;
         }
-        sb.append("(" + n.val);
+        sb.append("(").append(n.val);
         if (n.left == null && n.right == null) {
             sb.append(")");
             return;
@@ -29,22 +32,4 @@ public class ConstructStringFromBinaryTree606 {
         sb.append(")");
     }
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 }

@@ -1,5 +1,7 @@
 package com.lemonade.leetcode.t1000.t200;
 
+import com.lemonade.leetcode.common.TreeNode;
+
 @SuppressWarnings("unused")
 public class PathSum112 {
     public boolean hasPathSum(TreeNode root, int targetSum) {

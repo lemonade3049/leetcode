@@ -1,29 +1,12 @@
 package com.lemonade.leetcode.t2000;
 
-import org.w3c.dom.Node;
 
+import com.lemonade.leetcode.common.TreeNode;
+
+@SuppressWarnings("unused")
 public class MaximumDifferenceBetweenNodeAndAncestor1026 {
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
-    class NodeInfo {
+    static class NodeInfo {
         int max;
         int min;
         int res;
@@ -55,8 +38,8 @@ public class MaximumDifferenceBetweenNodeAndAncestor1026 {
         }
 
         NodeInfo info = new NodeInfo();
-        int max = 0;
-        int min = 0;
+        int max;
+        int min;
         if (lInfo != null && rInfo != null) {
             max = Math.max(lInfo.max, rInfo.max);
             min = Math.min(lInfo.min, rInfo.min);

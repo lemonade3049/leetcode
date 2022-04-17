@@ -1,24 +1,9 @@
 package com.lemonade.leetcode.t1000.t700;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode() {
-    }
+import com.lemonade.leetcode.common.TreeNode;
 
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
+@SuppressWarnings("unused")
 public class TrimABinarySearchTree669 {
 
     public TreeNode trimBST(TreeNode root, int low, int high) {
@@ -26,7 +11,7 @@ public class TrimABinarySearchTree669 {
         while (root != null && (root.val < low || root.val > high)){
             if(root.val < low){
                 root = root.right;
-            }else if(root.val > high){
+            }else {
                 root = root.left;
             }
         }
