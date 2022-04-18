@@ -1,10 +1,9 @@
 package com.lemonade.leetcode.t1000.t300;
 
+import com.lemonade.leetcode.common.ListNode;
+
+@SuppressWarnings("unused")
 public class DeleteNodeInALinkedList237 {
-    class ListNode {
-        int val;
-        ListNode next;
-    }
 
     public void deleteNode(ListNode node) {
         node.val = node.next.val;

@@ -1,28 +1,13 @@
 package com.lemonade.leetcode.t1000.t200;
 
+import com.lemonade.leetcode.common.ListNode;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 @SuppressWarnings("unused")
 public class SortList148 {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public ListNode sortList(ListNode head) {
         ListNode node = head;
         List<Integer> list = new ArrayList<>();

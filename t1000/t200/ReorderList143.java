@@ -1,27 +1,8 @@
 package com.lemonade.leetcode.t1000.t200;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Stack;
-import java.util.concurrent.ConcurrentLinkedDeque;
+import com.lemonade.leetcode.common.ListNode;
 
 public class ReorderList143 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     public static void main(String[] args) {
         ListNode node = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
@@ -50,7 +31,6 @@ public class ReorderList143 {
         }
 
         n1.next = n2;
-        return;
 
     }
 

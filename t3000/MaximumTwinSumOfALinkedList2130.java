@@ -1,25 +1,11 @@
 package com.lemonade.leetcode.t3000;
 
+import com.lemonade.leetcode.common.ListNode;
+
 import java.util.Stack;
 
 @SuppressWarnings("unused")
 public class MaximumTwinSumOfALinkedList2130 {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     public int pairSum(ListNode head) {
         ListNode n = head;

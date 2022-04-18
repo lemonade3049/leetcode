@@ -1,5 +1,7 @@
 package com.lemonade.leetcode.t2000;
 
+import com.lemonade.leetcode.common.ListNode;
+
 @SuppressWarnings("unused")
 public class SwappingNodesInALinkedList1721 {
 
@@ -26,23 +28,5 @@ public class SwappingNodesInALinkedList1721 {
         h1.val = h2.val;
         h2.val = t;
         return head;
-    }
-}
-
-@SuppressWarnings("unused")
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
     }
 }

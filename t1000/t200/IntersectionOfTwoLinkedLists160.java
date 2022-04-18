@@ -1,16 +1,9 @@
 package com.lemonade.leetcode.t1000.t200;
 
+import com.lemonade.leetcode.common.ListNode;
+
 @SuppressWarnings("unused")
 public class IntersectionOfTwoLinkedLists160 {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
 
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         int i = 0;

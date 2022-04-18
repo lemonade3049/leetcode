@@ -1,15 +1,9 @@
 package com.lemonade.leetcode.t1000.t200;
 
-public class LinkedListCycle141 {
-    class ListNode {
-        int val;
-        ListNode next;
+import com.lemonade.leetcode.common.ListNode;
 
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-    }
+@SuppressWarnings("unused")
+public class LinkedListCycle141 {
 
     public boolean hasCycle(ListNode head) {
         if(head == null){

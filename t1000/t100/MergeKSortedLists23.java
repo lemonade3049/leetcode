@@ -1,28 +1,12 @@
 package com.lemonade.leetcode.t1000.t100;
 
+import com.lemonade.leetcode.common.ListNode;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
 @SuppressWarnings("unused")
-
 public class MergeKSortedLists23 {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public ListNode mergeKLists(ListNode[] lists) {
         PriorityQueue<ListNode> p = new PriorityQueue<>(Comparator.comparingInt(o -> o.val));
         for (ListNode list : lists) {
