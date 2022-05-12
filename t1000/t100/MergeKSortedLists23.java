@@ -20,8 +20,7 @@ public class MergeKSortedLists23 {
             ListNode n = p.poll();
             curr.next = new ListNode(n.val);
             if (n.next != null) {
-                n = n.next;
-                p.offer(n);
+                p.offer(n.next);
             }
             curr = curr.next;
         }
