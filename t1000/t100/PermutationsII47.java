@@ -23,12 +23,13 @@ public class PermutationsII47 {
             }
             ans.add(list);
         }
-        Set<Integer> set = new HashSet<>();
+
+        boolean[] visited = new boolean[21];
         for (int i = start; i < nums.length; i++) {
-            if(set.contains(nums[i])){
+            if(visited[nums[i] + 10]){
                 continue;
             }
-            set.add(nums[i]);
+            visited[nums[i] + 10] = true;
             swap(nums, i, start);
             f(nums, start + 1, ans);
             swap(nums, i, start);
