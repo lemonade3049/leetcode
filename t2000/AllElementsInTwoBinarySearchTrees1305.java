@@ -9,8 +9,6 @@ import java.util.Stack;
 @SuppressWarnings("unused")
 public class AllElementsInTwoBinarySearchTrees1305 {
 
-
-
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         List<Integer> list = new ArrayList<>();
 

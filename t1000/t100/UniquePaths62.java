@@ -1,5 +1,9 @@
 package com.lemonade.leetcode.t1000.t100;
 
+/**
+ * 杨辉三角计算公式
+ * Pascal's triangle
+ */
 @SuppressWarnings("unused")
 public class UniquePaths62 {
 
