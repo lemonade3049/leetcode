@@ -12,7 +12,7 @@ public class NQueens51 {
         return res;
     }
 
-    void f(boolean[][] map, int x, List<List<String>> res) {
+    private void f(boolean[][] map, int x, List<List<String>> res) {
         if (x == map.length - 1) {
             for (int i = 0; i < map.length; i++) {
 
@@ -46,17 +46,17 @@ public class NQueens51 {
         return list;
     }
 
-    boolean check(boolean[][] map, int x, int y) {
+    private boolean check(boolean[][] map, int x, int y) {
         for (int i = 0; i < x; i++) {
             if (map[i][y]) {
                 return false;
             }
 
-            if(y - x + i >= 0 && map[i][y - x + i]){
+            if (y - x + i >= 0 && map[i][y - x + i]) {
                 return false;
             }
 
-            if(y + x - i < map.length && map[i][y + x - i]){
+            if (y + x - i < map.length && map[i][y + x - i]) {
                 return false;
             }
         }

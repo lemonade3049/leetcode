@@ -1,8 +1,6 @@
 package com.lemonade.leetcode.t1000.t100;
 
-/**
- * not finished
- */
+@SuppressWarnings("unused")
 public class LongestPalindromicSubstring5 {
 
     public static void main(String[] args) {
