@@ -4,6 +4,7 @@ import com.lemonade.leetcode.common.TreeNode;
 
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class AverageOfLevelsInBinaryTree637 {
     public List<Double> averageOfLevels(TreeNode root) {
         List<Double> list = new ArrayList<>();
